@@ -39,6 +39,10 @@ dependencies {
 	compileOnly("org.projectlombok:lombok")
 	developmentOnly("org.springframework.boot:spring-boot-devtools")
 	runtimeOnly("com.h2database:h2")
+	// Source: https://mvnrepository.com/artifact/io.github.openfeign.querydsl/querydsl-jpa
+	implementation("io.github.openfeign.querydsl:querydsl-jpa:7.1")
+	// Source: https://mvnrepository.com/artifact/io.github.openfeign.querydsl/querydsl-apt
+//	implementation("io.github.openfeign.querydsl:querydsl-apt:7.1")
 
 	implementation("io.jsonwebtoken:jjwt-api:0.13.0")
 	runtimeOnly("io.jsonwebtoken:jjwt-impl:0.13.0")
