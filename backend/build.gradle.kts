@@ -5,6 +5,7 @@ plugins {
 	id("org.springframework.boot") version "4.0.6"
 	id("io.spring.dependency-management") version "1.1.7"
 	kotlin("plugin.jpa") version "2.2.21"
+	kotlin("kapt") version "2.2.21"
 }
 
 group = "com.back"
@@ -41,6 +42,7 @@ dependencies {
 	runtimeOnly("com.h2database:h2")
 	// Source: https://mvnrepository.com/artifact/io.github.openfeign.querydsl/querydsl-jpa
 	implementation("io.github.openfeign.querydsl:querydsl-jpa:7.1")
+	kapt("io.github.openfeign.querydsl:querydsl-apt:7.1:jpa")
 	// Source: https://mvnrepository.com/artifact/io.github.openfeign.querydsl/querydsl-apt
 //	implementation("io.github.openfeign.querydsl:querydsl-apt:7.1")
 
